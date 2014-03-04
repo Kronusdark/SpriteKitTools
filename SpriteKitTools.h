@@ -5,7 +5,7 @@
 //  Copyright (c) 2014 Weston Hanners. All rights reserved.
 //
 
-    // Master Import Header
+#import "SpriteKitToolsConstants.h"
 
 #import "SKSpriteNode+SpriteKitTools.h"
 #import "SKEmitterNode+SpriteKitTools.h"
