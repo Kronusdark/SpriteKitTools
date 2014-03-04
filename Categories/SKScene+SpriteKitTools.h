@@ -9,6 +9,6 @@
 
 @interface SKScene (SpriteKitTools)
 
-- (void)initDefaultFramePhysics;
+- (void)skt_initDefaultFramePhysics;
 
 @end

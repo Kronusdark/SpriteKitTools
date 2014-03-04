@@ -9,7 +9,7 @@
 
 @implementation SKEmitterNode (SpriteKitTools)
 
-+ (SKEmitterNode*)emitterNodeWithName:(NSString *)name {
++ (SKEmitterNode*)skt_emitterNodeWithName:(NSString *)name {
     NSString *emitterPath = [[NSBundle mainBundle] pathForResource:name ofType:@"sks"];
     SKEmitterNode *emitter = [NSKeyedUnarchiver unarchiveObjectWithFile:emitterPath];
     return emitter;

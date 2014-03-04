@@ -9,6 +9,6 @@
 
 @interface SKEmitterNode (SpriteKitTools)
 
-+ (SKEmitterNode*)emitterNodeWithName:(NSString *)name;
++ (SKEmitterNode*)skt_emitterNodeWithName:(NSString *)name;
 
 @end

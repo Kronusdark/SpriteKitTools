@@ -9,7 +9,7 @@
 
 @implementation SKSpriteNode (SpriteKitTools)
 
-+ (SKSpriteNode *)spriteNodeWithImageNamed:(NSString *)name andDefaultPhysicsBody:(BOOL)physics {
++ (SKSpriteNode *)skt_spriteNodeWithImageNamed:(NSString *)name andDefaultPhysicsBody:(BOOL)physics {
     
     SKSpriteNode *spriteNode = [SKSpriteNode spriteNodeWithImageNamed:name];
     

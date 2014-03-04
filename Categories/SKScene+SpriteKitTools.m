@@ -9,7 +9,7 @@
 
 @implementation SKScene (SpriteKitTools)
 
-- (void)initDefaultFramePhysics {
+- (void)skt_initDefaultFramePhysics {
     
     SKPhysicsBody *framePhysics = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
     
