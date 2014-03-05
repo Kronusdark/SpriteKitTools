@@ -9,6 +9,7 @@
 
 @interface SKSpriteNode (SpriteKitTools)
 
+    /// Initalizes a SKSPriteNode with default physics body the same size as the texture
 + (SKSpriteNode *)skt_spriteNodeWithImageNamed:(NSString *)name andDefaultPhysicsBody:(BOOL)physics;
 
     /// Performs selector after a delay as an SKAction
