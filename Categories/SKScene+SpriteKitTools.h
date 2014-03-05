@@ -31,16 +31,16 @@
 
     // Geometry Methods CGPoint
 
-    /// Returns a CGPoint representing the top right of the scene
+    /// Returns a CGPoint representing the top right corner of the scene
 - (CGPoint)skt_topRight;
 
-    /// Returns a CGPoint representing the top left of the scene
+    /// Returns a CGPoint representing the top left corner of the scene
 - (CGPoint)skt_topLeft;
 
-    /// Returns a CGPoint representing the bottom right of the scene
+    /// Returns a CGPoint representing the bottom right corner of the scene
 - (CGPoint)skt_bottomRight;
 
-    /// Returns a CGPoint representing the bottom left of the scene
+    /// Returns a CGPoint representing the bottom left corner of the scene
 - (CGPoint)skt_bottomLeft;
 
 @end
