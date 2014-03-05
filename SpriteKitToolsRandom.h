@@ -36,7 +36,7 @@ static inline CGFloat skt_RandomAngleInRadians(int maxInRadians, int minInRadian
         max = maxInRadians;
         min = minInRadians;
     }
-    int randomDegrees = skt_RandomInteger(max, min);
+    NSInteger randomDegrees = skt_RandomInteger(max, min);
     
     return DEGREES_TO_RADIANS(randomDegrees);
 }
