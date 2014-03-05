@@ -8,28 +8,28 @@
 #import <UIKit/UIKit.h>
 
     /// Adds pointA to pointB
-CGPoint skt_CGPointAdd(CGPoint pointA, CGPoint pointB) {
+static inline CGPoint skt_CGPointAdd(CGPoint pointA, CGPoint pointB) {
     CGPoint newPoint = CGPointMake(pointA.x + pointB.x,
                                    pointA.y + pointB.y);
     return newPoint;
 }
 
     /// Multiplies pointA by pointB
-CGPoint skt_CGPointMultiply(CGPoint pointA, CGPoint pointB) {
+static inline CGPoint skt_CGPointMultiply(CGPoint pointA, CGPoint pointB) {
     CGPoint newPoint = CGPointMake(pointA.x * pointB.x,
                                    pointA.y * pointB.y);
     return newPoint;
 }
 
     /// Subtracts pointA from pointB
-CGPoint skt_CGPointSubtract(CGPoint pointA, CGPoint pointB) {
+static inline CGPoint skt_CGPointSubtract(CGPoint pointA, CGPoint pointB) {
     CGPoint newPoint = CGPointMake(pointA.x - pointB.x,
                                    pointA.y - pointB.y);
     return newPoint;
 }
 
     /// Divides pointA by pointB
-CGPoint skt_CGPointDivide(CGPoint pointA, CGPoint pointB) {
+static inline CGPoint skt_CGPointDivide(CGPoint pointA, CGPoint pointB) {
     
     if (pointB.x == 0 || pointB.y == 0)
         return CGPointZero;
@@ -40,7 +40,7 @@ CGPoint skt_CGPointDivide(CGPoint pointA, CGPoint pointB) {
 }
 
     /// Returns the distance between pointA and pointB
-CGFloat skt_CGPointDistance(CGPoint pointA, CGPoint pointB) {
+static inline CGFloat skt_CGPointDistance(CGPoint pointA, CGPoint pointB) {
     CGPoint offset = skt_CGPointSubtract(pointA, pointB);
 
     CGFloat distance = sqrtf(offset.x * offset.x + offset.y * offset.y);
@@ -49,7 +49,7 @@ CGFloat skt_CGPointDistance(CGPoint pointA, CGPoint pointB) {
 }
 
     /// Returns a normalized vector from point1 to point2 for a specified unit size.
-CGPoint skt_NormalizedVector(CGPoint fromPoint, CGPoint toPoint, CGFloat unitSize) {
+static inline CGPoint skt_NormalizedVector(CGPoint fromPoint, CGPoint toPoint, CGFloat unitSize) {
     CGPoint offset = skt_CGPointSubtract(fromPoint, toPoint);
     
     CGFloat distance = skt_CGPointDistance(fromPoint, toPoint);
@@ -62,14 +62,14 @@ CGPoint skt_NormalizedVector(CGPoint fromPoint, CGPoint toPoint, CGFloat unitSiz
 }
 
     /// Returns the angle of a vector
-CGFloat skt_CGPointToAngle(CGPoint point) {
+static inline CGFloat skt_CGPointToAngle(CGPoint point) {
     CGFloat angle = atan2f(point.y, point.x);
     
     return angle;
 }
 
     /// Returns the shortest angle between two angles
-CGFloat skt_ShortestAngleBetween(CGFloat angleA, CGFloat angleB) {
+static inline CGFloat skt_ShortestAngleBetween(CGFloat angleA, CGFloat angleB) {
     CGFloat difference = angleB - angleA;
     
     CGFloat angle = fmodf(difference, M_PI * 2);
@@ -84,6 +84,6 @@ CGFloat skt_ShortestAngleBetween(CGFloat angleA, CGFloat angleB) {
 }
 
     /// Returns a value indicating the sign of the value;
-CGFloat skt_SignOfValue(CGFloat value) {
+static inline CGFloat skt_SignOfValue(CGFloat value) {
     return value >= 0 ? 1 : -1;
 }
