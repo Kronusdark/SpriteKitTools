@@ -67,3 +67,23 @@ CGFloat skt_CGPointToAngle(CGPoint point) {
     
     return angle;
 }
+
+    /// Returns the shortest angle between two angles
+CGFloat skt_ShortestAngleBetween(CGFloat angleA, CGFloat angleB) {
+    CGFloat difference = angleB - angleA;
+    
+    CGFloat angle = fmodf(difference, M_PI * 2);
+    
+    if (angle >= M_PI) {
+        angle -= M_PI * 2;
+    } else if (angle <= -M_PI) {
+        angle += M_PI * 2;
+    }
+    return angle;
+    
+}
+
+    /// Returns a value indicating the sign of the value;
+CGFloat skt_SignOfValue(CGFloat value) {
+    return value >= 0 ? 1 : -1;
+}
