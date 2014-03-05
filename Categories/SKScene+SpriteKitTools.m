@@ -9,7 +9,7 @@
 
 @implementation SKScene (SpriteKitTools)
 
-/// Creates a simple physics frame for the scene. The frame is the same size as the scene.
+    /// Creates a simple physics frame for the scene. The frame is the same size as the scene.
 - (void)skt_initDefaultFramePhysics {
     
     SKPhysicsBody *framePhysics = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
@@ -18,7 +18,7 @@
     
 }
 
-/// Returns a CGPoint representing the center of the view
+    /// Returns a CGPoint representing the center of the view
 - (CGPoint)skt_center {
 	return CGPointMake(self.size.width * 0.5,
 					   self.size.height * 0.5);
