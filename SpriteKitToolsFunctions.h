@@ -38,4 +38,25 @@ CGPoint skt_CGPointDivide(CGPoint pointA, CGPoint pointB) {
                                    pointA.y / pointB.y);
     return newPoint;
 }
+
+    /// Returns the distance between pointA and pointB
+CGFloat skt_CGPointDistance(CGPoint pointA, CGPoint pointB) {
+    CGPoint offset = skt_CGPointSubtract(pointA, pointB);
+
+    CGFloat distance = sqrtf(offset.x * offset.x + offset.y * offset.y);
+    
+    return distance;
+}
+
+    /// Returns a normalized vector from point1 to point2 for a specified unit size.
+CGPoint skt_NormalizedVector(CGPoint fromPoint, CGPoint toPoint, CGFloat unitSize) {
+    CGPoint offset = skt_CGPointSubtract(fromPoint, toPoint);
+    
+    CGFloat distance = skt_CGPointDistance(fromPoint, toPoint);
+    
+    CGPoint direction = skt_CGPointDivide(offset, CGPointMake(distance, distance));
+    
+    CGPoint vector = skt_CGPointMultiply(direction, CGPointMake(unitSize, unitSize));
+    
+    return vector;
 }
