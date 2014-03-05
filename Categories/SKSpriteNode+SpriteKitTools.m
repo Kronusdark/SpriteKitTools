@@ -35,4 +35,12 @@
     [self runAction:sequence];
 }
 
+- (CGFloat)skt_halfHeight {
+    return self.size.height * 0.5;
+}
+
+- (CGFloat)skt_halfWidth {
+    return self.size.width * 0.5;
+}
+
 @end

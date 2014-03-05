@@ -15,4 +15,10 @@
     /// Performs selector after a delay as an SKAction
 - (void)skt_performSelector:(SEL)selector onTarget:(id)target afterDelay:(NSTimeInterval)delay;
 
+    /// Returns a CGFloat of half the sprite height
+- (CGFloat)skt_halfHeight;
+
+    /// Returns a CGFloat of half the sprite width
+- (CGFloat)skt_halfWidth;
+
 @end
