@@ -33,11 +33,11 @@
 }
 
 - (CGFloat)skt_top {
-    return 0;
+    return self.size.height;
 }
 
 - (CGFloat)skt_bottom {
-    return self.size.height;
+    return 0;
 }
 
 - (CGPoint)skt_topRight {
