@@ -11,6 +11,11 @@
 
 - (void)skt_initDefaultFramePhysics;
 
+    /// Geometry Methods
 - (CGPoint)skt_center;
+- (CGFloat)skt_right;
+- (CGFloat)skt_left;
+- (CGFloat)skt_top;
+- (CGFloat)skt_bottom;
 
 @end

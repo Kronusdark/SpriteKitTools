@@ -18,9 +18,32 @@
     
 }
 
+#pragma mark - Geometry Methods
+
     /// Returns a CGPoint representing the center of the view
 - (CGPoint)skt_center {
 	return CGPointMake(self.size.width * 0.5,
 					   self.size.height * 0.5);
 }
+
+    /// Returns a float representing the right side of the scene
+- (CGFloat)skt_right {
+    return self.size.width;
+}
+
+    /// Returns a float representing the left side of the scene
+- (CGFloat)skt_left {
+    return 0;
+}
+
+    /// Returns a float represnting the top of the scene
+- (CGFloat)skt_top {
+    return 0;
+}
+
+    /// Returns a float represnting the bottom of the scene
+- (CGFloat)skt_bottom {
+    return self.size.height;
+}
+
 @end
