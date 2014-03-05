@@ -6,6 +6,7 @@
 //
 
 #import "SpriteKitToolsConstants.h"
+#import "SpriteKitToolsFunctions.h"
 
 #import "SKSpriteNode+SpriteKitTools.h"
 #import "SKEmitterNode+SpriteKitTools.h"
