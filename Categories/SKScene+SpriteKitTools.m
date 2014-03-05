@@ -40,20 +40,52 @@
     return 0;
 }
 
+- (CGFloat)skt_centerX {
+    return self.size.width * 0.5;
+}
+
+- (CGFloat)skt_centerY {
+    return self.size.height * 0.5;
+}
+
 - (CGPoint)skt_topRight {
-    return CGPointMake(self.skt_right, self.skt_top);
+    return CGPointMake(self.skt_right,
+                       self.skt_top);
 }
 
 - (CGPoint)skt_topLeft {
-    return CGPointMake(self.skt_left, self.skt_top);
+    return CGPointMake(self.skt_left,
+                       self.skt_top);
 }
 
 - (CGPoint)skt_bottomRight {
-    return CGPointMake(self.skt_right, self.skt_bottom);
+    return CGPointMake(self.skt_right,
+                       self.skt_bottom);
 }
 
 - (CGPoint)skt_bottomLeft {
-    return CGPointMake(self.skt_left, self.skt_bottom);
+    return CGPointMake(self.skt_left,
+                       self.skt_bottom);
+}
+
+- (CGPoint)skt_topCenter {
+    return CGPointMake(self.skt_centerX,
+                       self.skt_top);
+}
+
+- (CGPoint)skt_bottomCenter {
+    return CGPointMake(self.skt_centerX,
+                       self.skt_bottom);
+}
+
+- (CGPoint)skt_leftCenter {
+    return CGPointMake(self.skt_left,
+                       self.skt_centerY);
+}
+
+- (CGPoint)skt_rightCenter {
+    return CGPointMake(self.skt_right,
+                       self.skt_centerY);
 }
 
 @end

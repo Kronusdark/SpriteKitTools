@@ -29,6 +29,12 @@
     /// Returns a float representing the bottom of the scene
 - (CGFloat)skt_bottom;
 
+    /// Returns a CGFloat representing the center of the scene along the X axis
+- (CGFloat)skt_centerX;
+
+    /// Returns a CGFloat representing the center of the scene along the Y axis
+- (CGFloat)skt_centerY;
+
     // Geometry Methods CGPoint
 
     /// Returns a CGPoint representing the top right corner of the scene
@@ -42,5 +48,17 @@
 
     /// Returns a CGPoint representing the bottom left corner of the scene
 - (CGPoint)skt_bottomLeft;
+
+    /// Returns a CGPoint representing the top center of the scene
+- (CGPoint)skt_topCenter;
+
+    /// Returns a CGPoint representing the bottom center of the scene
+- (CGPoint)skt_bottomCenter;
+
+    /// Returns a CGPoint representing the left center of the scene
+- (CGPoint)skt_leftCenter;
+
+    /// Returns a CGPoint representing the right center of the scene
+- (CGPoint)skt_rightCenter;
 
 @end
