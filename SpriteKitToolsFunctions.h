@@ -60,3 +60,10 @@ CGPoint skt_NormalizedVector(CGPoint fromPoint, CGPoint toPoint, CGFloat unitSiz
     
     return vector;
 }
+
+    /// Returns the angle of a vector
+CGFloat skt_CGPointToAngle(CGPoint point) {
+    CGFloat angle = atan2f(point.y, point.x);
+    
+    return angle;
+}
