@@ -11,4 +11,7 @@
 
 + (SKSpriteNode *)skt_spriteNodeWithImageNamed:(NSString *)name andDefaultPhysicsBody:(BOOL)physics;
 
+    /// Performs selector after a delay as an SKAction
+- (void)skt_performSelector:(SEL)selector onTarget:(id)target afterDelay:(NSTimeInterval)delay;
+
 @end

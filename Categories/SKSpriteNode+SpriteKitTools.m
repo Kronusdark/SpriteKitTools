@@ -24,4 +24,15 @@
     return spriteNode;
 }
 
+- (void)skt_performSelector:(SEL)selector onTarget:(id)target afterDelay:(NSTimeInterval)delay {
+    
+    SKAction *wait = [SKAction waitForDuration:delay];
+    
+    SKAction *performSelector = [SKAction performSelector:selector onTarget:target];
+    
+    SKAction *sequence = [SKAction sequence:@[wait, performSelector]];
+    
+    [self runAction:sequence];
+}
+
 @end
