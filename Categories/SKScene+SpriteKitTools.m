@@ -40,4 +40,20 @@
     return self.size.height;
 }
 
+- (CGPoint)skt_topRight {
+    return CGPointMake(self.skt_right, self.skt_top);
+}
+
+- (CGPoint)skt_topLeft {
+    return CGPointMake(self.skt_left, self.skt_top);
+}
+
+- (CGPoint)skt_bottomRight {
+    return CGPointMake(self.skt_right, self.skt_bottom);
+}
+
+- (CGPoint)skt_bottomLeft {
+    return CGPointMake(self.skt_left, self.skt_bottom);
+}
+
 @end

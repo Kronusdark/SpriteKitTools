@@ -29,4 +29,18 @@
     /// Returns a float representing the bottom of the scene
 - (CGFloat)skt_bottom;
 
+    // Geometry Methods CGPoint
+
+    /// Returns a CGPoint representing the top right of the scene
+- (CGPoint)skt_topRight;
+
+    /// Returns a CGPoint representing the top left of the scene
+- (CGPoint)skt_topLeft;
+
+    /// Returns a CGPoint representing the bottom right of the scene
+- (CGPoint)skt_bottomRight;
+
+    /// Returns a CGPoint representing the bottom left of the scene
+- (CGPoint)skt_bottomLeft;
+
 @end
