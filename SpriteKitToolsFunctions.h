@@ -7,6 +7,12 @@
 
 #import <UIKit/UIKit.h>
 
+    /// Convert Radians to Degrees
+#define RADIANS_TO_DEGREES(radians) ((radians) * (180.0 / M_PI))
+
+    /// Convert Degrees to Radians
+#define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
+
     /// Adds pointA to pointB
 static inline CGPoint skt_CGPointAdd(CGPoint pointA, CGPoint pointB) {
     CGPoint newPoint = CGPointMake(pointA.x + pointB.x,
@@ -68,7 +74,7 @@ static inline CGFloat skt_CGPointToAngle(CGPoint point) {
     return angle;
 }
 
-    /// Returns the shortest angle between two angles
+    /// Returns the shortest angle between two angles in radians
 static inline CGFloat skt_ShortestAngleBetween(CGFloat angleA, CGFloat angleB) {
     CGFloat difference = angleB - angleA;
     
