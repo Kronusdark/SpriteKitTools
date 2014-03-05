@@ -17,4 +17,8 @@
     
 }
 
+- (CGPoint)skt_center {
+	return CGPointMake(self.size.width * 0.5,
+					   self.size.height * 0.5);
+}
 @end

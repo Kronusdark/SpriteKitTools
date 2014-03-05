@@ -11,4 +11,6 @@
 
 - (void)skt_initDefaultFramePhysics;
 
+- (CGPoint)skt_center;
+
 @end
