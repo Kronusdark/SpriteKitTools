@@ -21,7 +21,7 @@ static inline NSInteger skt_RandomInteger(int max, int min) {
         realMin = min;
     }
 
-    return fmod(arc4random(), realMax) + realMin;
+    return arc4random_uniform(realMax - realMin) + realMin;
 }
 
     /// Returns a random angle between specified angles in radians
