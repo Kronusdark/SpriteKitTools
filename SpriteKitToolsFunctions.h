@@ -93,3 +93,13 @@ static inline CGFloat skt_ShortestAngleBetween(CGFloat angleA, CGFloat angleB) {
 static inline CGFloat skt_SignOfValue(CGFloat value) {
     return value >= 0 ? 1 : -1;
 }
+
+    /// Converts a CGPoint to a CGVector
+static inline CGVector skt_CGPointToVector(CGPoint point) {
+    return CGVectorMake(point.x, point.y);
+}
+
+    /// Converts a CGVector to a CGPoint
+static inline CGPoint skt_CGVectorToPoint(CGVector vector) {
+    return CGPointMake(vector.dx, vector.dy);
+}
